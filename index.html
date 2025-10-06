@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NaturaDetect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden-section { display: none; }
+    .active-section { display: flex; }
+    section {
+      min-height: 100vh; 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="relative bg-cover bg-center h-64 flex items-center justify-center" style="background-image: url('uwu.png');">
+   
+  </header>
+
+
+  <nav class="sticky top-0 z-50 bg-white shadow-md">
+    <style>
+      .btn-custom {
+        background-color: oklch(40.5% 0.101 131.063);
+        color: white;
+        border-radius: 9999px; 
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+      }
+      .btn-custom:hover {
+        background-color: oklch(50% 0.101 131.063); 
+      }
+    </style>
+
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-center gap-4 flex-wrap">
+      <button onclick="mostrarSeccion('proyecto')" class="btn-custom">Conoce NaturaDetect</button>
+      <button onclick="mostrarSeccion('agua')" class="btn-custom">Contaminación del Agua</button>
+      <button onclick="mostrarSeccion('metales')" class="btn-custom">Los metales Pesados</button>
+    </div>
+  </nav>
+
+  <!-- Proyecto (primera pantalla visible) -->
+  <section id="proyecto" class="active-section fade-in bg-green-100">
+    <h2 class="text-4xl font-bold mb-4">🌿 Proyecto NaturaDetect</h2>
+    <p style="text-align: justify;line-height: 2; max-width: 800px; margin: auto;">Este es el proyecto de 5 jovenes de primer año de bachillerato del colegio Eucaristico Mercedario de San Martín, que surge como respuesta a la contaminación del agua por metales pesados,
+un problema silencioso que amenaza la salud y el ambiente en todo el mundo.
+Estos contaminantes, como el cobre y el hierro, suelen pasar desapercibidos por sus bajas concentraciones. La propuesta plantea el uso de recursos naturales y química casera como alternativa accesible. Las antocianinas presentes en la flor de Jamaica permiten detectar cambios de color ante estos metales. Con apoyo de té negro y amoníaco, se logra una identificación más específica de cada uno. Los experimentos realizados demostraron resultados viables, sostenibles y de bajo costo.
+Además, se creó un sitio web educativo para informar y orientar a la población.
+NaturaDetect busca concientizar sobre la importancia del agua limpia y segura para todos.</p> 
+</p>
+<br>
+    <p style="text-align: justify;line-height: 2; max-width: 800px; margin: auto;">Los objetivos que nos planteamos y conseguimos con este proyecto son: 
+	</p> 
+<ul style="text-align: justify; max-width: 800px; margin: 30px auto; line-height: 2;">
+    <li>⋆˙⟡ Demostrar la efectividad de métodos accesibles basados en química natural  y casera; como alternativa viable para la detección de metales pesados en recursos hídricos. </li>
+    <br>
+	<li>⋆˙⟡ Concientizar sobre los perjuicios que genera en la salud humana y ambiental la presencia de los metales pesados en el agua y la contaminación de los recursos hídricos en general, a través de la educación del tema.</li>
+    <br>
+	<li>⋆˙⟡ Dar visibilidad a la problemática de los metales pesados en el agua para que esta deje de pasar desapercibida y sea tomada en consideración como una amenaza que requiere atención, en lugar de ignorada.</li>
+    <br>
+    <li>En este sitio, aprenderas sobre la contaminación del agua y lo que esta conlleva; los metales pesados y sobre el comienzo del cambio</li>
+    <br>
+</p>
+    <div class="w-100 h-80 bg-gray-0 flex items-center justify-center rounded-xl">
+  <img src="wow.png" alt="wow.png" class="max-h-full max-w-full rounded-xl">
+</div>
+
+  </section>
+
+  <!-- Agua -->
+  <section id="agua" class="hidden-section bg-blue-50">
+    <h2 class="text-4xl font-bold mb-4">💧 Contaminación del Agua</h2>
+    <p style="text-align: justify;line-height: 2; max-width: 800px; margin: auto;">La contaminación del agua ocurre cuando sustancias dañinas, como químicos, plásticos, desechos industriales o aguas residuales, se mezclan con ríos, lagos y mares, alterando su calidad y volviéndola peligrosa para el consumo y la vida acuática. Este problema reduce la disponibilidad de agua potable, afecta a los ecosistemas y pone en riesgo la salud humana, ya que puede transmitir enfermedades y acumular tóxicos en los alimentos que provienen del agua. En pocas palabras, el agua contaminada deja de cumplir su función esencial: sostener la vida.</p>
+    <br>
+	<br>
+	<p style="text-align: justify;line-height: 2; max-width: 800px; margin: auto;">Las causas de la contaminación del agua pueden variar y provenir de varias fuentes, como lo son: </p>
+	<br>
+	<ul style="text-align: justify; max-width: 800px; margin: 30px auto; line-height: 2;">
+    <li> ⋆˙⟡Los desechos industriales representan una de las principales fuentes de contaminación del agua. Muchas fábricas descargan metales pesados, solventes y químicos directamente en ríos y lagos, lo que modifica la calidad del agua y puede provocar toxicidad en peces, plantas y seres humanos.</li>
+    <br>
+	<li> ⋆˙⟡Las aguas residuales domésticas también contribuyen al problema. El agua usada en hogares, cargada de jabones, detergentes, grasas y restos orgánicos, suele llegar a ríos y quebradas sin tratamiento, generando focos de bacterias y enfermedades. </li>
+    <br>
+	<li> ⋆˙⟡En el ámbito agrícola, el uso excesivo de agroquímicos es otra causa frecuente. Fertilizantes, pesticidas y herbicidas aplicados en los cultivos son arrastrados por la lluvia hacia mantos acuíferos y corrientes de agua, contaminándolas y afectando a la fauna y al consumo humano. </li>
+	<br>
+	<li> ⋆˙⟡La basura y los plásticos agravan la situación. Estos residuos sólidos no solo bloquean cauces de agua, sino que, al degradarse, liberan microplásticos que terminan en la cadena alimenticia y afectan a la salud de múltiples especies, incluida la nuestra.</li>
+    <br>
+	<li> ⋆˙⟡Por último, los derrames de petróleo y combustibles generan graves daños. Cuando ocurren fugas o accidentes, las manchas de hidrocarburos se extienden sobre la superficie del agua, impidiendo el intercambio de oxígeno y provocando la muerte de peces, aves y otras formas de vida marina.</li>
+	<br>
+	<div class="w-100 h-80 bg-gray-0 flex items-center justify-center rounded-xl">
+	<img src="conta.jpg" alt="conta.jpg" class="max-h-full max-w-full rounded-xl">
+</div>
+	<br>
+	<br>
+	<p style="text-align: justify;line-height: 2; max-width: 800px; margin: auto;">Y todo esto desencadena consecuencias; animate a ver cuales son. </p>
+ <!-- Cartas interactivas -->
+<style>
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
+  }
+
+  .card {
+    width: 180px;
+    height: 250px;
+    perspective: 1000px;
+  }
+
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-back {
+    background: #f39c12;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    transform: rotateY(180deg);
+  }
+</style>
+
+<div class="cards-container">
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="diarrea.png" alt="Imagen 1">
+      </div>
+      <div class="card-back">
+        <p>La contaminación del agua puede causar enfermedades como diarrea, cólera y hepatitis.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="pec.jpg" alt="Imagen 2">
+      </div>
+      <div class="card-back">
+        <p>Provoca la muerte de peces y otras especies acuáticas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="ocean.jpg" alt="Imagen 3">
+      </div>
+      <div class="card-back">
+        <p>Reduce la biodiversidad en ríos, lagos y mares.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="agua.jpg" alt="Imagen 4">
+      </div>
+      <div class="card-back">
+        <p>Disminuye la disponibilidad de agua potable.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="stonks.jpg" alt="Imagen 5">
+      </div>
+      <div class="card-back">
+        <p>Genera pérdidas económicas en pesca, agricultura y turismo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carta 6 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="camaron.jpg" alt="Imagen 6">
+      </div>
+      <div class="card-back">
+        <p>Contamina los alimentos provenientes del agua, como peces y mariscos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carta 7 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="agri.jpg" alt="Imagen 7">
+      </div>
+      <div class="card-back">
+        <p>Deteriora los suelos agrícolas cuando se usa para riego.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carta 8 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="tierra.png" alt="Imagen 8">
+      </div>
+      <div class="card-back">
+        <p>Contribuye a fenómenos ambientales</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+<p style="text-align: justify;line-height: 2; max-width: 800px; margin: auto;">Como estas consecuencias existen un millon más, que afectan de manera negativa a diveros factores que pueden ir desde el aspecto del ambiente y ecosistemas hasta la propia calidad de vida y esta en nuestras manos el mejorar esta situación o no.</p>
+<br>
+<br>
+<p style="text-align: justify;line-height: 2; max-width: 800px; margin: auto;">Entonces, ¿Que podemos hacer?...</p>
+
+<div style="max-width:1000px; margin:40px auto; padding:10px; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px;">
+
+
+  <div style="background-color:#f3f4f6; border-radius:16px; padding:20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.08); transition:transform 0.2s ease, box-shadow 0.2s ease;"
+       onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)';"
+       onmouseout="this.style.transform='none'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.08)';">
+    <h3 style="font-size:1.1rem; color:#333; margin-bottom:8px;">Reducir el uso de plasticos.</h3>
+    <p style="font-size:0.9rem; color:#555; line-height:1.4;">Evitar bolsas, botellas y utensilios desechables disminuye la cantidad de residuos que terminan en ríos y mares. Optar por productos reutilizables ayuda a cortar de raíz una de las mayores fuentes de contaminación: los microplásticos que afectan tanto a la fauna como a la salud humana.</p>
+  </div>
+
+
+  <div style="background-color:#f3f4f6; border-radius:16px; padding:20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.08); transition:transform 0.2s ease, box-shadow 0.2s ease;"
+       onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)';"
+       onmouseout="this.style.transform='none'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.08)';">
+    <h3 style="font-size:1.1rem; color:#333; margin-bottom:8px;">Usar de manera responsable productos quimicos</h3>
+    <p style="font-size:0.9rem; color:#555; line-height:1.4;">Los detergentes, cloro y pesticidas llegan fácilmente al agua por el desagüe o la lluvia. Elegir versiones biodegradables, medir la cantidad que realmente se necesita y evitar el exceso de químicos en casa y en jardines reduce significativamente el impacto contaminante.</p>
+  </div>
+
+
+  <div style="background-color:#f3f4f6; border-radius:16px; padding:20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.08); transition:transform 0.2s ease, box-shadow 0.2s ease;"
+       onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.12)';"
+       onmouseout="this.style.transform='none'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.08)';">
+    <h3 style="font-size:1.1rem; color:#333; margin-bottom:8px;">Disponer correctamente de los desechos</h3>
+    <p style="font-size:0.9rem; color:#555; line-height:1.4;">Tirar el aceite usado, baterías, medicamentos o basura común en lugares adecuados evita que estos residuos lleguen a ríos, lagos y mantos acuíferos. Una simple acción como llevarlos a puntos de recolección puede prevenir daños graves en la calidad del agua./p>
+  </div>
+ <br>
+<p
+ style="text-align: center;line-height: 1.8; max-width: 800px; margin: auto;">El cambio no llega de afuera, comienza en ti: cada acción responsable que tomes hoy, por pequeña que parezca, es una gota que suma para limpiar nuestros ríos, mares y la vida que depende de ellos.</p>
+</div>
+  </section>
+
+  <section id="metales" class="hidden-section bg-yellow-50">
+    <h2 class="text-4xl font-bold mb-4">⚠️ Metales Pesados</h2>
+  <p style="text-align: justify;>“Metal pesado”, es un término científico que describe a una amplia gama de elementos metálicos que se encuentran en la naturaleza y que se caracterizan por su alto peso molecular y densidad, en bajas concentraciones.</p>
+    <br>
+	<p class="max-w-2xl mb-6">¿Que tienen que ver estos con la contaminación del agua?</p>
+	<br>
+	<p class="max-w-2xl mb-6">La contaminación del agua por metales pesado es un hecho, y es originada en residuos industriales, actividades mineras, pesticidas, fertilizantes y la mala disposición de baterías o aparatos electrónicos, es un problema silencioso porque no altera a simple vista el color ni el olor del agua; esta invisibilidad, unida al desconocimiento de sus riesgos, agrava la situación al permitir que los metales se acumulen poco a poco en los ecosistemas y en nuestro propio organismo, hasta convertirse en una amenaza grave que pasa desapercibida hasta que ya es demasiado tarde.</p>
+    <div class="grid gap-4 md:grid-cols-3 max-w-4xl w-full">
+      <button onclick="mostrarSubseccion('tipos')" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        🔎 Tipos de metal pesado.
+      </button>
+      <button onclick="mostrarSubseccion('consecuencias')" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        💀 Consecuencias
+      </button>
+      <button onclick="mostrarSubseccion('factores')" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        🌍 Factores
+      </button>
+    </div>
+
+    <div id="tipos" class="hidden-section mt-10 max-w-2xl fade-in">
+      <h3 class="text-2xl font-bold mb-2">🔎 Tipos de Metales Pesados</h3>
+      <p class="mb-4">Existe una buena variedad de elementos considerados como metales pesados, entre estos podemos destacar:</p>
+	  <ul style="text-align: justify; max-width: 800px; margin: 30px auto; line-height: 2;">
+    <li> ⋆˙⟡ Arsénico (As): La OMS establece un límite de 0,01 mg/L en agua potable. Es un metaloide muy tóxico, especialmente en sus formas inorgánicas, y está clasificado como cancerígeno. Su presencia en el agua suele deberse a fuentes naturales en acuíferos, actividades mineras e industriales.</li>
+    <br>
+	<li> ⋆˙⟡ Cadmio (Cd): El límite seguro está en 0,003–0,005 mg/L. Este metal se libera por minería, baterías y procesos industriales. Es altamente tóxico, se acumula en el cuerpo y puede dañar riñones, huesos y sistema nervioso. </li>
+    <br>
+	<li> ⋆˙⟡ Cobre (Cu): El valor guía es de 2 mg/L. Es un metal esencial para el organismo en bajas cantidades, pero en exceso produce intoxicación y daños en hígado y riñón. Suele llegar al agua por corrosión de tuberías y residuos industriales. </li>
+	<br>
+	<li> ⋆˙⟡ Hierro (Fe): No existe un límite de salud establecido por la OMS, pero se recomienda un valor estético de 0,3 mg/L para evitar sabor metálico y manchas. Aunque no es altamente tóxico, su exceso favorece la proliferación bacteriana y afecta la calidad del agua. </li>
+    <br>
+	<li> ⋆˙⟡ Plomo (Pb): El límite aceptado es de 0,01 mg/L, aunque en realidad no hay un nivel seguro, sobre todo para niños. Es neurotóxico, afecta el desarrollo cognitivo, la sangre y los riñones. Su principal fuente es la corrosión de tuberías y soldaduras antiguas. </li>
+    <br>
+	<li> ⋆˙⟡ Talio (Tl): No existe un valor guía claro en la OMS, pero es extremadamente tóxico incluso en bajas concentraciones. Se utiliza en la industria electrónica y su exposición puede causar daños severos en el sistema nervioso, órganos internos e intoxicación aguda. </li>  
+	<br>
+	<div class="w-100 h-80 bg-gray-0 flex items-center justify-center rounded-xl">
+	<img src="metal.jpg" alt="conta.jpg" class="max-h-full max-w-full rounded-xl">
+    </div>
+</div> 
+	<div id="consecuencias" class="hidden-section mt-10 max-w-2xl fade-in">
+      <h3 class="text-2xl font-bold mb-2">💀 Consecuencias</h3>
+      <p class="mb-4">Existe una variedad de consecuencias negativas tanto como para la salud como para el ambiene, que la presencia de metales pesados en el agua puede provocar, entre estas podemos encontrar:.</p>
+        <ul style="text-align: justify; max-width: 800px; margin: 30px auto; line-height: 2;">
+    <li> ⋆˙⟡ Debilitan el sistema inmunológico, reduciendo la capacidad del organismo para defenderse de infecciones y otras enfermedades.</li>
+    <br>
+	<li> ⋆˙⟡ Los metales pesados pueden causar daños neurológicos, afectando la memoria, la concentración y el desarrollo cognitivo, sobre todo en niños. </li>
+    <br>
+	<li> ⋆˙⟡ Pueden provocar trastornos renales, ya que muchos de ellos se acumulan en los riñones y reducen su capacidad de filtrar desechos del cuerpo. </li>
+	<br>
+	<li> ⋆˙⟡ Generan problemas hepáticos, porque el hígado debe procesar y acumular toxinas, lo que puede derivar en inflamación o fallos en su función. </li>
+    <br>
+	<li> ⋆˙⟡ Aumentan el riesgo de cáncer, ya que varios metales pesados están clasificados como agentes cancerígenos por su capacidad de dañar el ADN.</li>
+	<br>
+	<li> ⋆˙⟡ Producen debilidad ósea y problemas en articulaciones, debido a la interferencia con la absorción de minerales como el calcio. </li>
+	<br>
+	<li> ⋆˙⟡ Provocan afectaciones digestivas, como dolor abdominal, diarreas o vómitos, especialmente en exposiciones agudas. </li>
+	 <br>
+	 <br>
+	 
+<style>
+  .gallery-container {
+    perspective: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .carousel {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+  }
+
+  .carousel img {
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  
+  .carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(500px); }
+  .carousel img:nth-child(2) { transform: rotateY(60deg) translateZ(500px); }
+  .carousel img:nth-child(3) { transform: rotateY(120deg) translateZ(500px); }
+  .carousel img:nth-child(4) { transform: rotateY(180deg) translateZ(500px); }
+  .carousel img:nth-child(5) { transform: rotateY(240deg) translateZ(500px); }
+  .carousel img:nth-child(6) { transform: rotateY(300deg) translateZ(500px); }
+
+  @keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+  }
+</style>
+
+<div class="gallery-container">
+  <div class="carousel">
+    <img src="baby.jpg" alt="Imagen 1">
+    <img src="cancer.jpg" alt="Imagen 2">
+    <img src="enf.jpg" alt="Imagen 3">
+    <img src="esto.jpg" alt="Imagen 4">
+    <img src="diomio.png" alt="Imagen 5">
+    <img src="tibu.jpg" alt="Imagen 6">
+  </div>
+</div>
+
+	 
+    </div>
+    <div id="factores" class="hidden-section mt-10 max-w-2xl fade-in">
+      <h3 class="text-2xl font-bold mb-2">🌍 Factores</h3>
+      <p class="mb-4">Existen diversos factores que generan esta contaminación.</p>
+	   <ul style="text-align: justify; max-width: 800px; margin: 30px auto; line-height: 2;">
+    <li> ⋆˙⟡ La actividad minera libera metales como mercurio, arsénico o plomo al extraer minerales, contaminando ríos y acuíferos cercanos.</li>
+    <br>
+	<li> ⋆˙⟡ Los procesos industriales (metalurgia, baterías, textiles, químicos) descargan residuos con cadmio, cobre y otros metales que terminan en cuerpos de agua. </li>
+    <br>
+	<li> ⋆˙⟡ Pueden provocar trastornos renales, ya que muchos de ellos se acumulan en los riñones y reducen su capacidad de filtrar desechos del cuerpo. </li>
+	<br>
+	<li> ⋆˙⟡ El uso de fertilizantes y pesticidas en la agricultura aporta arsénico, cadmio y otros compuestos que son arrastrados por la lluvia hacia suelos y aguas subterráneas. </li>
+    <br>
+	<li> ⋆˙⟡ La mala disposición de residuos peligrosos, como baterías, aparatos electrónicos y aceites, libera plomo, cadmio y talio que se infiltran en mantos acuíferos.</li>
+	<br>
+	<li> ⋆˙⟡ Las tuberías antiguas y sistemas de conducción de agua con plomo o cobre en mal estado también son una fuente de contaminación directa. </li>
+	 <br>
+      <div class="w-100 h-80 bg-gray-0 flex items-center justify-center rounded-xl">
+	<img src="gul.jpg" alt="gul.jpg" class="max-h-full max-w-full rounded-xl">
+    </div>
+  </section>
+
+  
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>© 2025 NaturaDetect 🌱</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      
+      document.querySelectorAll("section").forEach(sec => {
+        sec.classList.add("hidden-section");
+        sec.classList.remove("active-section", "fade-in");
+      });
+      
+      let sec = document.getElementById(id);
+      sec.classList.remove("hidden-section");
+      sec.classList.add("active-section", "fade-in");
+    }
+
+    function mostrarSubseccion(id) {
+      
+      document.querySelectorAll("#metales div[id]").forEach(div => div.classList.add("hidden-section"));
+      
+      let sub = document.getElementById(id);
+      sub.classList.remove("hidden-section");
+      sub.classList.add("fade-in");
+    }
+  </script>
+</body>
+</html>
+    
